@@ -10,7 +10,7 @@ const Loader : React.FC<any> = () => {
                 <div></div>
             </div>
             <h4>Waiting for you to upload your photo</h4>
-            <p>By Onitsiky ©</p>
+            <p>© Made by Onitsiky </p>
         </>
     )
 }

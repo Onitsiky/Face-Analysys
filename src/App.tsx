@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <div className="App">
-      <Navbar label="Face Analyzer"/>
+      <Navbar label="Face Analysis"/>
       <br/>
       <Main/>
     </div>
