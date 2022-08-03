@@ -3,7 +3,8 @@ import React from "react";
 const Items : React.FC<any> = (props : any) => {
     const {title, subtitle, value, sub, val, sub1, val1, sub2, val2, conf}= props;
     return(
-        <div className="card">
+        <>
+        <div className="card bg-secondary text-light">
             <h5 className="card-header">{title}</h5>
             <div className="card-body">
                 {subtitle && value && <p className="card-text">{subtitle} : {value}</p>}
@@ -13,6 +14,8 @@ const Items : React.FC<any> = (props : any) => {
                 {conf && <p className="car-text">Confidence : {conf}</p>}
             </div>
         </div>
+        <br/>
+        </>
     )
 }
 export default Items;

@@ -1,4 +1,5 @@
 import React from "react"
+import Loader from "./Loader";
 
 const Input : React.FC<any> = (props) => {
     const {onChange, children} = props
@@ -9,7 +10,7 @@ const Input : React.FC<any> = (props) => {
             <label htmlFor="inputImg">
                 Select Image <br/>
             <i className="fa fa-2x fa-camera">
-            <input type="file" name="oni" id="inputImg" accept="image/*" onChange={onChange}/>
+            <input type="file" name="oni" id="inputImg" accept="image/*" onChange={onChange} />
             </i>
             </label>
         </div>

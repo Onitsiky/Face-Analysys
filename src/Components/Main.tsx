@@ -1,8 +1,9 @@
-import React, { ChangeEvent, useState } from "react";
+import React, {  useState } from "react";
 import AWS from "aws-sdk";
 import anonlog from "./anonlog";
 import Input from "./Input";
 import Values from "./Values";
+import Loader from "./Loader";
 
 
 const Main : React.FC<any> = () => {
@@ -70,7 +71,7 @@ const Main : React.FC<any> = () => {
     return (
         <>
         <Input onChange={ProcessImage}>
-              {temp.length != 0 ? <Values info={temp} pics={pic}/>  : null}
+              {temp.length != 0 ? <Values info={temp} pics={pic}/>  : <Loader/>}
           </Input>
         </>
     )
