@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.global{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.img{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.pic{
+    width: 100%;
+    height: auto;
+}
